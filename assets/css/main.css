@@ -1639,11 +1639,11 @@ body.is-article-visible #header {
 	display: block;
 }
 
-#projects-nav.projects-collapsible:not(.is-open) + div {
+#projects-nav.projects-collapsible:not(.is-open)+div {
 	margin-top: 3rem !important;
 }
 
-#projects-nav.projects-collapsible:not(.is-open) + div:before {
+#projects-nav.projects-collapsible:not(.is-open)+div:before {
 	top: calc(-3rem - 1px);
 	height: calc(3rem + 1px);
 }
@@ -1653,13 +1653,50 @@ body.is-article-visible #header {
 	transition: margin-top 300ms ease, max-height 300ms ease, opacity 250ms ease, transform 300ms ease;
 }
 
-#projects-nav.projects-collapsible + div {
+#projects-nav.projects-collapsible+div {
 	transition: margin-top 300ms ease;
 }
 
-#projects-nav.projects-collapsible + div:before {
+#projects-nav.projects-collapsible+div:before {
 	transition: top 300ms ease, height 300ms ease;
 }
+
+#projects-nav ul {
+	display: grid !important;
+	grid-template-columns: repeat(3, 1fr) !important;
+	gap: 0.5rem;
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+
+#projects-nav ul li {
+	border-left: none !important;
+	padding-left: 0 !important;
+}
+
+#projects-nav ul li a {
+	min-width: 0 !important;
+	width: 100% !important;
+	height: 2.75rem;
+	line-height: 2.75rem;
+	text-align: center;
+	display: block;
+	box-sizing: border-box;
+	box-shadow: inset 0 0 0 1px #ffffff;
+	border-radius: 4px;
+}
+
+#projects-nav.projects-collapsible::after {
+	display: none !important;
+}
+
+#projects-nav ul {
+	border: none !important;
+	border-radius: 0 !important;
+}
+
+
 
 body.is-preload #header {
 	-moz-filter: blur(0.125rem);
@@ -1993,4 +2030,28 @@ body.is-preload #footer {
 	top: 0;
 	text-indent: 100%;
 	overflow-x: hidden;
+}
+
+
+
+
+
+#Fundamentals ul li a {
+	color: #ffffff;
+	border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+	transition: border-bottom-color 0.2s ease-in-out;
+}
+
+#Fundamentals ul li a:hover {
+	border-bottom-color: #ffffff;
+}
+
+
+#intro p a {
+	border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+	transition: border-bottom-color 0.2s ease-in-out;
+}
+
+#intro p a:hover {
+	border-bottom-color: #ffffff;
 }
