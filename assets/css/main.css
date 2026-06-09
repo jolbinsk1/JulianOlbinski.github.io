@@ -1379,16 +1379,15 @@ button {
 	height: 100%;
 }
 
-
-.bg-image.image1 {
+.bg-image.image3 {
 	background-image: url('../css/sunset.jpg');
 }
 
-.bg-image.image2 {
+.bg-image.image1 {
 	background-image: url('../css/norway.jpg');
 }
 
-.bg-image.image3 {
+.bg-image.image2 {
 	background-image: url('../css/alps.jpeg');
 }
 
