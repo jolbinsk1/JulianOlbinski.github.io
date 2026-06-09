@@ -175,6 +175,13 @@ textarea {
 
 }
 
+
+@media screen and (max-width: 480px) {
+	#projects-nav ul {
+		grid-template-columns: repeat(2, 1fr) !important;
+	}
+}
+
 html {
 	box-sizing: border-box;
 }
