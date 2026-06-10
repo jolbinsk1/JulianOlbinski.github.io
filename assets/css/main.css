@@ -175,6 +175,11 @@ textarea {
 
 }
 
+@media screen and (max-width: 480px) {
+	#projects-nav ul {
+		grid-template-columns: repeat(2, 1fr) !important;
+	}
+}
 
 html {
 	box-sizing: border-box;
@@ -1161,7 +1166,7 @@ button,
 	letter-spacing: 0.2rem;
 	line-height: 2.75rem;
 	outline: 0;
-	padding: 0 1.25rem 0 1.35rem;
+	padding: 0 1.25rem 0 1.25rem;
 	text-align: center;
 	text-decoration: none;
 	text-transform: uppercase;
@@ -1373,6 +1378,7 @@ button {
 	height: 100%;
 }
 
+
 .bg-image.image3 {
 	background-image: url('../css/sunset.jpg');
 }
@@ -1459,9 +1465,9 @@ button {
 	-webkit-transition: -webkit-transform 0.325s ease-in-out, -webkit-filter 0.325s ease-in-out, opacity 0.325s ease-in-out;
 	-ms-transition: -ms-transform 0.325s ease-in-out, -ms-filter 0.325s ease-in-out, opacity 0.325s ease-in-out;
 	transition: transform 0.325s ease-in-out, filter 0.325s ease-in-out, opacity 0.325s ease-in-out;
-	padding: 3rem 3rem 2rem 3rem;
+	padding: 2rem 3rem 1.5rem 3rem;
 	/* Increase padding for a larger area */
-	width: 50rem;
+	width: 45rem;
 	/* Increase width to cover a larger area */
 	background-color: rgba(27, 31, 34, 0.65);
 	/* Dark grey with opacity */
@@ -1536,7 +1542,7 @@ button {
 	-webkit-transition-delay: 0.25s;
 	-ms-transition-delay: 0.25s;
 	transition-delay: 0.25s;
-	padding: 3rem 2rem;
+	padding: 2rem 2rem;
 	max-height: 40rem;
 	overflow: hidden;
 }
@@ -1578,10 +1584,10 @@ button {
 	min-width: 7.5rem;
 	height: 2.75rem;
 	line-height: 2.75rem;
-	padding: 0 1.25rem 0 1.45rem;
+	padding: 0 1.25rem 0 1.25rem;
 	text-transform: uppercase;
 	letter-spacing: 0.2rem;
-	font-size: 0.8rem;
+	font-size: 0.7rem;
 	border-bottom: 0;
 }
 
@@ -1695,15 +1701,6 @@ body.is-article-visible #header {
 	border: none !important;
 	border-radius: 0 !important;
 }
-
-
-@media screen and (max-width: 736px) {
-	#projects-nav ul {
-		grid-template-columns: repeat(2, 1fr) !important;
-	}
-}
-
-
 
 
 
