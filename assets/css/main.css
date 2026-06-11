@@ -1438,6 +1438,8 @@ button {
 
 }
 
+}
+
 @media screen and (max-width: 480px) {
 
 	#wrapper {
@@ -1445,6 +1447,12 @@ button {
 	}
 
 }
+
+/* at the very bottom */
+@media screen and (max-width: 736px) {
+    #projects-nav ul {
+        grid-template-columns: repeat(2, 1fr) !important;
+    }
 
 /* Header */
 
