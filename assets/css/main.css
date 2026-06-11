@@ -1422,6 +1422,18 @@ button {
 	display: block;
 }
 
+
+.mobile-break {
+	display: none;
+}
+
+@media screen and (max-width: 736px) {
+	.mobile-break {
+		display: block;
+	}
+}
+
+
 @media screen and (max-width: 1680px) {
 
 	#wrapper {
