@@ -175,12 +175,6 @@ textarea {
 
 }
 
-@media screen and (max-width: 480px) {
-	#projects-nav ul {
-		grid-template-columns: repeat(2, 1fr) !important;
-	}
-}
-
 html {
 	box-sizing: border-box;
 }
@@ -1714,6 +1708,11 @@ body.is-article-visible #header {
 	border-radius: 0 !important;
 }
 
+@media screen and (max-width: 736px) {
+    #projects-nav ul {
+        grid-template-columns: repeat(2, 1fr) !important;
+    }
+}
 
 
 body.is-preload #header {
